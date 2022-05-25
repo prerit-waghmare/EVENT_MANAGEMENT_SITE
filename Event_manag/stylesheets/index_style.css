@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#a700ff,#4d19db);
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.logo{
+    width: 150px;
+}
+
+nav ul{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.input_form{
+    position: absolute;
+    left: 850px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.267);
+    border-radius: 10px;
+    bottom: 50px;
+}
+
+.input_form form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: black;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.input_form a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.input_form .btn{
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    padding: 1px 1px;
+    color: #fff;
+    border-radius: 30px;
+    background: black;
+    transition: transform 0.3s ease;
+    width: 150px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 40%;
+    min-width: 300px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.col img{
+    width: 100%;
+}
+
+.elements{
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    animation: move 2.5s linear infinite;
+}
+
+@keyframes move{
+    0%{
+        transform:  translate(-15px, 0px);
+    }    
+    50%{
+        transform:  translate(0px, -15px);
+    }
+    100%{
+        transform:  translate(-15px, 0px);
+    }
+}
+
+.tri_1{
+    position: absolute;
+    left: 50%;
+    top: -180px;
+    transform: translate(-50%);
+    width: 400px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.tri_2{
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.cir{
+    position: absolute;
+    right: -100px;
+    bottom: -300px;
+    width: 500px;
+    z-index: -1;
+    opacity: 0.5;
+}
